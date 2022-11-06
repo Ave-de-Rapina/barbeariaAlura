@@ -253,8 +253,12 @@ td, th {
     margin: 2em auto;
 }
 
-@media screen and (max-width: 480px) {
-    .produtos, .caixa, .principal, .conteudo-beneficios, .mapa-conteudo, .video {
+@media screen and (max-width: 820px) {
+    .produtos, .caixa, .conteudo-beneficios, .mapa-conteudo, .video {
+        width: auto;
+    }
+    .principal {
+        padding: 2%;
         width: auto;
     }
 
@@ -266,13 +270,33 @@ td, th {
         position: static;
     }
 
-    .lista-beneficios, .imagem-beneficios {
+    .lista-beneficios {
+        width: 100%;
+        text-align: center;
+        margin-bottom: 3%;
+    }
+    .imagem-beneficios {
         width: 100%;
     }
 
     .produtos li {
         display: block; 
         width: auto;  
+        margin-bottom: 5%;
     }
-    
+    nav li {
+        display: block;
+        margin: 4%;
+        text-align: center;
+    }
+
+    form, table {
+        margin-left: 8px;
+        margin-right: 8px;
+
+    }
+    .enviar {
+        width: 100%;
+        font-size: 16px;
+    }
 }
